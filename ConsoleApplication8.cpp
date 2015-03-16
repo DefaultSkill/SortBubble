@@ -1,5 +1,5 @@
-
-
+// For fun.cpp: определяет точку входа для консольного приложения.
+//
 #include "stdafx.h"
 #include <iostream>
 #include <conio.h>
@@ -14,7 +14,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	int const N = 10;
 	int A[N];
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)// Проверка ввода
 	{
 		cout << "Введите значение " << i << " элемента массива : ";
 		while (!(cin >> A[i]))
@@ -25,7 +25,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 	}
 
-	cout << "\t\t ***Сортировка Bubble\a***" << endl;
+	cout << "\t\t ***Сортировка Bubble\a***" << endl;//Сортировка "Пузырьком"
 	for (int i = N - 1; i >= 0; i--)
 	{
 		for (int j = 0; j < i; j++)
@@ -39,7 +39,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 	}
 
-	for (int i = 0; i < N; i++){
+	for (int i = 0; i < N; i++)//Вывод мвссива
+	{
 		cout << "A[" << i << "]=" << A[i] << endl;
 	}
 	_getch();
